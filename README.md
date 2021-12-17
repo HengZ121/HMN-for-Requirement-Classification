@@ -11,10 +11,10 @@ go to current directory, and execute following in command/terminal:
 
 or run this project on GPU:
 
-    *python train.py --id [a customized name/id goes here] --id cuda True*
+    *python train.py --id [a customized name/id goes here] --cuda True*
 
 ***A folder is needed to store the model's computational data, name it by ckpt 
-OR something else you like by adding one more parameters in command:
+OR something else you like by adding one more parameter in command:
 
     *python train.py --id [a customized training id goes here] --ckpt [a customized folder name goes here]*
 
@@ -29,4 +29,5 @@ More parameters available and details can be found in train.py
 
 Run placebo (basic Bert Model) by executing:
 
-    *python train.py --id [a customized training id goes here] --model_type Bert_c --lr [customized learning rate goes here]*
+    *python train.py --id [a customized training id goes here] --model_type Bert_c --lr [customized learning rate goes here]* <br />
+    e.g. python train.py --clabel_nb 5 --des_ver 2 --lr 0.00001 --epoch 10 --model_type Bert_c --kf 8 --id .00001lr_18len
