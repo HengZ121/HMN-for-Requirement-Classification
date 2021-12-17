@@ -258,8 +258,6 @@ def main():
         print('Overall Performance on {}: Precision: {} | Recall: {} | F1: {}\n'.format(name, int(avg_precisions[counter]*100)/100, int(avg_recalls[counter]*100)/100, int(avg_f1s[counter]*100)/100))
         eval_log.write('Overall Performance on {}: Precision: {} | Recall: {} | F1: {}\n'.format(name, int(avg_precisions[counter]*100)/100, int(avg_recalls[counter]*100)/100, int(avg_f1s[counter]*100)/100))
         counter += 1
-    print('Overall Performance on F: Precision: {} | Recall: {} | F1: {}\n'.format(int(avg_precisions[counter]*100)/100, int(avg_recalls[counter]*100)/100, int(avg_f1s[counter]*100)/100))
-    eval_log.write('Overall Performance on F: Precision: {} | Recall: {} | F1: {}\n'.format(int(avg_precisions[counter]*100)/100, int(avg_recalls[counter]*100)/100, int(avg_f1s[counter]*100)/100))
 
     print("Average Accuracy: %f"%(avg_a))
     eval_log.write("Average Accuracy: %f\n"%(avg_a))
